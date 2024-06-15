@@ -9,13 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/bootstrap-5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <script>
-        const boton = document.getElementById('btn-linkeding');
-
-        boton.addEventListener('click', function () {
-            window.location.href = 'https://www.linkedin.com/in/jesuszappa/';
-        });
-    </script>
 </head>
 
 
@@ -28,8 +21,8 @@
                 <div class="container">
                     <header class="d-flex justify-content-center py-3">
                         <ul class="nav nav-pills">
-                            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
+                            <li class="nav-item"><a href="/index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+                            <li class="nav-item"><a href="/Proyectos.html" class="nav-link">Proyectos</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Sobre mi</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
                         </ul>
@@ -62,16 +55,89 @@
                     </div>
                     <div class="col-lg-6">
                         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Mis metas cumplidas</h1>
-                        <p class="lead">Me alegra po ---der decir que mi integración en los equipos y proyectos en los
+                        <p class="lead">Me alegra poder decir que mi integración en los equipos y proyectos en los
                             que
                             he trabajado, en los diferentes roles que he desempeñado, ha sido un éxito. Mi aporte, que
                             va más allá de solo las actividades contratadas, ha sido un impulso para el equipo, el
                             proyecto y la compañía que me dio la posibilidad de trabajar con ellos.</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Ver más</button>
+                            <button type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" class="btn btn-primary btn-lg px-4 me-md-2">Ver más</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Màs de mi</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2>Certificaciones</h2>
+                                            <ul>
+                                             <li>Fundamentos de la programación</li>
+                                              <li>Pruebas de software y QA</li>
+                                              <li>Scrum Fundamentals Certified</li>
+                                              <li>Gestión del tiempo</li>
+                                              <li>Conviértete en especialista en soporte IT</li>
+                                            </ul>
+                                            <h2>Educacion Adicional</h2>
+                                            <p>Diplomado Técnico en integridad web, Desarrollo de páginas web, contenido digital/multimedia y recursos informáticos.</p>
+                                          </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+            </section>
+            <section>
+                <section>
+                    <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+                        <h1 class="display-5 fw-bold text-body-emphasis">Mis habilidades</h1>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                            <div class="col d-flex align-items-start">
+
+                                <div>
+                                    <h4 class="fw-bold mb-0">Elicitación y Recolección de Requisitos</h4>
+                                    <p>Experto en elicitar requisitos a través de entrevistas, talleres e investigación
+                                        de usuarios.</p>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-start">
+
+                                <div>
+                                    <h4 class="fw-bold mb-0">Análisis y Documentación de Requisitos</h4>
+                                    <p>Sólida capacidad para analizar y documentar requisitos de manera clara y concisa.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-start">
+
+                                <div>
+                                    <h4 class="fw-bold mb-0">Pruebas de Usabilidad y Análisis de Feedback</h4>
+                                    <p>Proficiente en pruebas de usabilidad y análisis de feedback de usuarios para
+                                        mejorar los requisitos.</p>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-start">
+
+                                <div>
+                                    <h4 class="fw-bold mb-0">Herramientas de Gestión de Requisitos</h4>
+                                    <p>Familiaridad con diversas herramientas de gestión de requisitos (por ejemplo,
+                                        Jira, Doors).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </section>
             <form>
                 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
@@ -99,48 +165,7 @@
                     </div>
                 </div>
             </form>
-            <section>
-                <section>
-                    <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
-                        <h2 class="pb-2 border-bottom">Habilidades</h2>
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-                            <div class="col d-flex align-items-start">
-                                <i class="fa-regular fa-calendar-check"></i>
-                                <div>
-                                    <h4 class="fw-bold mb-0">Elicitación y Recolección de Requisitos</h4>
-                                    <p>Experto en elicitar requisitos a través de entrevistas, talleres e investigación
-                                        de usuarios.</p>
-                                </div>
-                            </div>
-                            <div class="col d-flex align-items-start">
-                                <img alt="imagen aleatoria" src="https://picsum.photos/25/25?random">
-                                <div>
-                                    <h4 class="fw-bold mb-0">Análisis y Documentación de Requisitos</h4>
-                                    <p>Sólida capacidad para analizar y documentar requisitos de manera clara y concisa.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col d-flex align-items-start">
-                                <img alt="imagen aleatoria" src="https://picsum.photos/25/25?random">
-                                <div>
-                                    <h4 class="fw-bold mb-0">Pruebas de Usabilidad y Análisis de Feedback</h4>
-                                    <p>Proficiente en pruebas de usabilidad y análisis de feedback de usuarios para
-                                        mejorar los requisitos.</p>
-                                </div>
-                            </div>
-                            <div class="col d-flex align-items-start">
-                                <img alt="imagen aleatoria" src="https://picsum.photos/25/25?random">
-                                <div>
-                                    <h4 class="fw-bold mb-0">Herramientas de Gestión de Requisitos</h4>
-                                    <p>Familiaridad con diversas herramientas de gestión de requisitos (por ejemplo,
-                                        Jira, Doors).</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-            </section>
             <footer>
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                     <div class="col-md-4 d-flex align-items-center">
@@ -152,25 +177,19 @@
                         <Jesus.Zappa class="mb-3 mb-md-0 text-body-secondary"> </Jesus.Zappa> Todos los derechos
                         reservador ©2024</span>
                     </div>
-
                     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#twitter"></use>
-                                </svg></a></li>
-                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#instagram"></use>
-                                </svg></a></li>
-                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#facebook"></use>
-                                </svg></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/jesuszappa"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/JesusZappa"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary"
+                                href="https://wa.me/+573167648439?text=%F0%9F%91%8BHola%2C%20me%20interesa%20tu%20perfil.%20%C2%A1Podemos%20hablar%3F"><i
+                                    class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
                 </footer>
-            </footer>
 
         </div>
     </div>
 
-    <script src="/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></scrip >
-</body >
-
-</html >
+    <script src="/bootstrap-5.3.3/js/bootstrap.bundle.min.js"> </scrip>
+</body>
